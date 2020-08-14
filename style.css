@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+  }
+  .first{
+    background: url(https://funart.pro/uploads/posts/2020-03/1585604954_41-p-krasivie-foni-v-pastelnikh-tonakh-107.jpg);
+
+  }
+
+  .color{
+    background: url(https://img3.goodfon.ru/wallpaper/nbig/e/17/eda-makro-tekstura.jpg);
+    background-size: 100%
+  }
+  .menu-figur{
+    background: url(https://img3.goodfon.ru/wallpaper/nbig/b/58/geometriya-tekstura-figury.jpg);
+    background-size: 100%
+  }
+
+  
+  .menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+  }
+  .menu-main li {display: inline-block;}
+  .menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+  }
+  .menu-main li:last-child:after {content: none;}
+  .menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+  }
+  .menu-main a, .menu-main a:visited {color: #9d999d;}
+  .menu-main a.current, .menu-main a:hover{color: #feb386;}
+  .menu-main a:before,
+  .menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+  }
+  .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+  .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+  @media (max-width: 550px) {
+  .menu-main {padding-top: 0;}
+  .menu-main li {display: block;}
+  .menu-main li:after {content: none;}
+  .menu-main a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+  }
+  }
+
+  .image-box {
+    position: relative;
+    width: 700px; 
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    
+  }
+  .image-box .border {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: 2px solid white;
+    
+  }
+  .image-box img {
+    display: block;
+    position: relative;
+    width: 600px;
+    height: 400px;
+   
+  }
+  .image-box .image-content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 60%;
+    padding: 20px;
+    z-index: 2;
+    background: linear-gradient(to bottom,rgba(18,26,63,0.3),rgba(18,26,63,0.9));
+  }
+  .image-box .image-header {
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+  }
+  .image-box p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  div{
+    display: block;
+    margin: auto;
+  }
+  
+  .container-square{
+    height: 200px;
+    width: 200px;
+    background-color: #cccccc;
+    border: 3px solid #000000;
+    float: left;
+    margin: 0 30px 60px 0;
+    position: relative;
+   
+  }
+  .block-square1{
+    background-color: lawngreen;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 0px;
+    
+  }
+  .block-square2{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
+  .block-square3{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+  .block-square4{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+  .container-block{
+    
+    background-color: grey;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 60px 0;
+    position: relative;
+  }
+  .container-block1{
+    background-color: blue;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: -75px;
+    left: -80px;
+    z-index: -1;
+  }
+  .container-block2{
+    background-color: blue;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: -75px;
+    right: 185px;
+    z-index: 1;
+  }
+  .container-block3{
+    background-color: blue;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: -75px;
+    right: 25px;
+    z-index: -1;
+  }
+  
+  .container-bigblock{
+    background: #cccccc;
+    position: absolute;
+    background-color: #ff0000;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+  }
+  .menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navigation-menu{
+    margin: 50px;
+    width: 50px;
+    height: 20px;
+    flex-basis: 15%;
+    list-style: none;
+  
+  }
+  
+  .pensil{
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .pensil-figcaption {
+    padding: 20px;
+    background-color: rgba(61, 55, 88, 0.637);
+  }
+  
+  .pensil-figcaption a {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .pensil:hover {
+    outline: 3px solid black;
+  }
+  
+  .pensil:hover > figcaption {
+    background-color: green;
+  }
+  
+  .pensil:hover > figcaption a {
+    color: black;
+  }
+  
+  .pensil-image {
+    width: 100px;
+    padding: 10px;
+
+  }
+
